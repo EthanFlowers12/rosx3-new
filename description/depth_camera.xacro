@@ -10,7 +10,7 @@
     <link name="camera_link">
         <visual>
             <geometry>
-                <box xyz="0.3 0.1 0.1" rpy="0 0 0"/>
+                <box size="0.3 0.1 0.1" rpy="0 0 0"/>
             </geometry>
             <material name="red"/>
         </visual>
