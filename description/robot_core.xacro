@@ -179,38 +179,4 @@
     <gazebo reference="Left_Front_wheel">
         <material>Gazebo/Red</material>
     </gazebo>
-
-     <!--Caster Wheel Link-->
-
-     <joint name="caster_wheel_link" type="fixed">
-        <parent link="chassis"/>
-        <child link="caster_wheel"/>
-        <origin xyz="0.0 0.0 0.0"/>
-     </joint>
-
-
-     <link name="caster_wheel">
-        <visual>
-            <geometry>
-                <sphere radius="0.0285"/>
-            </geometry>
-            <material name="orange"/>
-        </visual>
-        <collision>
-            <geometry>
-                <sphere radius="0.0285"/>
-            </geometry>
-        </collision>
-        <xacro:inertial_sphere mass="0.1" radius="0.0285">
-            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
-        </xacro:inertial_sphere>    
-     </link>
-
-     <gazebo reference="caster_wheel">
-        <material>Gazebo/Black</material>
-        <!--coeffecient of frictiob-->
-        <mu1 value="0.002"/>
-        <mu2 value="0.002"/>
-    </gazebo>
-
 </robot>
